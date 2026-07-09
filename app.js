@@ -15,7 +15,7 @@ config({path:"./config/config.env"});
 
 app.use(
     cors({
-        origin:["https://vercel-fronten-a.vercel.app", process.env.DASHBOARD_URL],
+        origin:["https://vercel-backend-bqw8.vercel.app", process.env.DASHBOARD_URL],
         methods:["GET","POST","PUT","DELETE"],
         credentials:true,
     })
