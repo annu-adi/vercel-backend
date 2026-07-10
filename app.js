@@ -28,9 +28,9 @@ app.use(fileUpload({
     useTempFiles:true,
     tempFileDir:"/tmp/",
 }));
-app.use("/api/message", messageRouter);
-app.use("/api/user", userRouter);
-app.use("/api/appointment", appointmentRouter);
+app.use("/api/v1/message", messageRouter);
+app.use("/api/v1/user", userRouter);
+app.use("/api/v1/appointment", appointmentRouter);
 dbConnection();
 
 app.use(errorMiddleware);
